@@ -20,11 +20,7 @@ function Posts({ post }) {
         className="group card overflow-hidden "
         style={{ animationDelay: "0ms" }}
       >
-        <Link
-          className="block"
-          to = {`/blog/${slug}`}
-          data-discover="true"
-        >
+        <Link className="block" to={`/blog/${slug}`} data-discover="true">
           <div className="relative h-52 overflow-hidden">
             <img
               alt={title}

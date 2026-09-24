@@ -8,7 +8,7 @@ function Card() {
       {featuredPosts.map((post) => {
         return (
           <article
-            key={post.id} 
+            key={post.id}
             className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626]
              hover:border-orange-500/30 transition-all duration-500"
           >
@@ -24,12 +24,18 @@ function Card() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                     src={post.image}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 
-                  group-hover:opacity-100 transition-opacity duration-500" />
+                  <div
+                    className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 
+                  group-hover:opacity-100 transition-opacity duration-500"
+                  />
                   {post.featured && (
                     <div className="absolute top-4 right-4">
                       <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-orange-500 to-yellow-500 text-white text-xs font-semibold rounded-full">
-                        <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                        <svg
+                          className="w-3.5 h-3.5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
                           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                         </svg>
                         مميز
@@ -43,8 +49,18 @@ function Card() {
                       {post.category}
                     </span>
                     <span className="flex items-center gap-1 text-sm text-neutral-500">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
                       </svg>
                       {post.readTime}
                     </span>
@@ -57,7 +73,6 @@ function Card() {
                   </p>
 
                   <div className="flex items-center justify-between mt-auto">
-                    {/* Dynamic Author block elements */}
                     <div className="flex items-center gap-3">
                       <div className="relative">
                         <img
@@ -77,13 +92,22 @@ function Card() {
 
                     <span className="inline-flex items-center gap-2 text-orange-500 font-semibold text-sm group-hover:gap-3 transition-all duration-300">
                       اقرأ المقال
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 12H5m7 7l-7-7 7-7" />
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 12H5m7 7l-7-7 7-7"
+                        />
                       </svg>
                     </span>
                   </div>
                 </div>
-
               </div>
             </a>
           </article>

@@ -96,28 +96,43 @@ function Navbar() {
                 ابدأ القراءة
               </NavLink>
             </div>
-            {/* mobile */}
 
-            <button 
-             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-3 text-neutral-400 hover:text-white hover:bg-[#161616] rounded-xl transition-all duration-300 border border-transparent hover:border-[#262626]">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden p-3 text-neutral-400 hover:text-white hover:bg-[#161616] rounded-xl transition-all duration-300 border border-transparent hover:border-[#262626]"
+            >
               <svg
                 className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
-              > {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
+              >
+                {" "}
+                {isOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
               </svg>
             </button>
           </div>
-          <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isOpen ? 'max-h-80 opacity-100 pb-6' : 'max-h-0 opacity-0 pointer-events-none'
-          }`} >        
-          {/* // className="md:hidden overflow-hidden transition-all duration-300 max-h-80 pb-6" */}
+          <div
+            className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+              isOpen
+                ? "max-h-80 opacity-100 pb-6"
+                : "max-h-0 opacity-0 pointer-events-none"
+            }`}
+          >
             <div className="bg-[#161616] backdrop-blur-xl rounded-2xl p-4 border border-[#262626]">
               <div className="flex flex-col space-y-1">
                 <NavLink

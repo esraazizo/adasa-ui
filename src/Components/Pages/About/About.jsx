@@ -178,9 +178,7 @@ function About() {
                 </div>
               ))}
             </div>
-            
           </div>
-          
         </section>
 
         <section className="py-20 bg-gradient-to-br from-orange-600 via-orange-500 to-yellow-500 relative overflow-hidden">

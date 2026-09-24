@@ -96,7 +96,7 @@ function BlogDetail() {
               </div>
             </div>
           </div>
-          
+
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="grid lg:grid-cols-[1fr_300px] gap-12">
               <div className="order-2 lg:order-1">
@@ -166,7 +166,7 @@ function BlogDetail() {
                         {author.name}
                       </h3>
                       <p className="text-neutral-500 text-sm mb-3">
-                        {author.role} 
+                        {author.role}
                       </p>
                       <p className="text-neutral-400 text-sm leading-relaxed">
                         مصور محترف شغوف بمشاركة المعرفة والخبرات في عالم التصوير

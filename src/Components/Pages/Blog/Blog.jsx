@@ -4,7 +4,7 @@ import Posts from "../Posts/Posts";
 import { useSearchParams } from "react-router";
 
 function Blog() {
-   const [searchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const urlCategory = searchParams.get("category");
   const allPosts = data.posts;
   const allCategories = data.categories;
@@ -12,18 +12,18 @@ function Blog() {
   const selectedCat = selectCat
     ? data.posts.filter((b) => b.category === selectCat)
     : data.posts;
- 
 
   const getButtonClass = (categoryName) => {
-    const baseClasses = "px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:cursor-pointer";
+    const baseClasses =
+      "px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 hover:cursor-pointer";
     const isActive = selectCat === categoryName;
 
-    return isActive 
-      ? `${baseClasses} bg-orange-500 text-white` 
+    return isActive
+      ? `${baseClasses} bg-orange-500 text-white`
       : `${baseClasses} bg-[#161616] text-neutral-400 border border-[#262626] hover:border-orange-500/30`;
   };
 
- useEffect(() => {
+  useEffect(() => {
     if (urlCategory) {
       setSelectCat(urlCategory);
     }
@@ -88,15 +88,16 @@ function Blog() {
               <div className="flex flex-wrap justify-center gap-2">
                 <button
                   onClick={() => setSelectCat(null)}
-                  className={getButtonClass(null)}>
-                
+                  className={getButtonClass(null)}
+                >
                   جميع المقالات
                 </button>
                 {allCategories.map((cat) => (
                   <button
                     key={cat.name}
                     onClick={() => setSelectCat(cat.name)}
-                    className={getButtonClass(cat.name)}>
+                    className={getButtonClass(cat.name)}
+                  >
                     {cat.name}
                   </button>
                 ))}

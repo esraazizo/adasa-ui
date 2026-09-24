@@ -8,18 +8,6 @@ import Notfound from "./Components/Pages/Notfound/Notfound";
 import BlogDetail from "./Components/Pages/BlogDetail/BlogDetail";
 
 function App() {
-  // let routes = createBrowserRouter([{
-  //   path:"/",element:<Layout/> , children:[
-  //     {index:true , element:<Home/>} ,
-  //     {path:"/about" , element:<About/> , children:[
-  //       {path:"profile" , element:<Profile/>},
-  //       {path:"aboutus" , element:<AboutUs/>}, ] },
-  //     {path:"/parent" , element:<Parent/> },
-  //     {path:"/login" , element:<Login/> },
-  //     {path:"/register" , element:<Register/> },
-  //     {path:"*" , element:<NotFound/> },]
-  // }])
-
   const myroutes = createBrowserRouter([
     {
       path: "/",
